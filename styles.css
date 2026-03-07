@@ -212,16 +212,20 @@ section.hero p{
     color: white;
     border: none;
     padding: 15px 32px;
+    font-size: 14px;
+    font-weight: bold;
     text-align:center;
-    font-size: 18px;
     height: 60px;
     width:  300px;
     border-radius: 20px;
+    
 }
 
 .joinme:hover{
-    background-color: #345bd1;
+    background-color: #4637ce;
+    cursor: pointer;
 }
+
 
 div.hero-text{
     display: flex;
@@ -573,4 +577,9 @@ button.message{
     border-radius: 10px;
     color: white;
     font-weight: bold;
+}
+
+button.message:hover{
+    background-color: #4637ce;
+    cursor: pointer;   
 }
