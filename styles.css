@@ -1,0 +1,481 @@
+/*default*/
+    @font-face {
+        font-family: "Bodoni";
+        src: url("assets/font/BodoniModaSC/BodoniModaSC_18pt-Regular.ttf")format("truetype");
+    }
+    @font-face {
+        font-family: "Jost";
+        src: url("assets/font/Jost/Jost-800-Hevy.otf")format("truetype");
+    }
+
+    body{
+        background-color: #12193d;
+        background-repeat: no-repeat;
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        overflow-x: hidden;
+    }
+
+/* navigation bar */
+
+    nav.navbar-container{
+        position: relative;
+        min-height: 100px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: linear-gradient(to right,#325fe6, #325fe6, #4aff33);
+        padding: 20px;
+        top:0;
+        width: 100%;
+        position:fixed;
+        z-index: 100000;
+
+    }
+    .navbar div{
+        display: flex;
+    }
+    .navbar div.brand{
+        gap:15px;
+    }
+
+    .navbar ul{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        padding:0px;
+        margin-left: auto;
+        margin-right: 50px;
+        overflow:hidden;
+    }
+
+    .navbar a{
+        color:white;
+        text-decoration: none;
+        padding: 10px;
+        margin:10px;
+        white-space: nowrap;
+    }
+
+    .navbar div.icontext h3{
+        font-family: "Bodoni";
+        font-size: 40px;
+        margin: 0px;
+    }
+
+    .navbar div.line{
+        background-color: #4aff33;
+        height: 60px;
+        width: 1px;
+        margin-left:30px;
+        z-index: 1000;
+    }
+
+    .border{
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to right,#325fe6, #4aff33);
+        height: 7px;
+        width: 100%;
+        position:fixed;
+        top:110px;
+        left: 0;
+        z-index: 0;
+    }
+
+/* hero section */
+
+section.hero-page{
+    min-height: 100px;
+    margin-bottom: 0;
+}
+
+section.hero-container{
+    position: relative;
+    bottom: 4px;
+    overflow: visible;
+}
+
+.bg{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: -1000;
+}
+
+.rectanglebg{
+    background: linear-gradient(to right, transparent, #12193d);
+    height: 800px;
+    width: 50%;
+}
+
+.gradientbg{
+    background: #12193d;
+    height: 800px;
+    width: 50%;    
+}
+
+.img-spread{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 20%;
+    z-index: -100;    
+}
+
+section.hero{
+    min-height: 800px;
+    padding: 60px 8%;
+}
+
+section.hero h1 span.arrapi{
+    display: block;
+    font-family: "Jost";
+    font-size: 100px;
+    background: linear-gradient(to right, #4aff33, #325fe6, #325fe6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom:-60px;
+    z-index: 2;
+}
+
+section.hero h1 span.welcomes-you{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-bottom:-20px;
+    z-index: 2;
+}
+
+section.hero p{
+    font-size: 18px;
+    text-align: justify;
+    text-wrap: wrap;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+.joinme{
+    background-color:#325fe6;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align:center;
+    font-size: 18px;
+    height: 60px;
+    width:  300px;
+    border-radius: 20px;
+}
+
+.joinme:hover{
+    background-color: #345bd1;
+}
+
+div.hero-text{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left:40%;
+    margin-right: 38%;
+    top: 10px;
+
+}
+
+/*LATEST NEWS LATEST NEWS LATEST NEWS*/
+
+.news-wrapper{
+    position: relative;
+    margin-top: -200px;
+    margin-bottom: 150px;
+    padding: 80px 10%;
+}
+
+.latest-news h1{
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+.news-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.news-item{
+    background-color: #1b2354;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0 8px 16px 0 rgba(0,0,0.5,0.6);
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover{
+    transform: translateY(-8px);
+}
+
+.news-item img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-item h4{
+    padding: 15px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.news-container a{
+    text-decoration: none;
+    color: white;
+}
+    
+/* FOOTER */
+
+footer {
+    background-color: white;
+    padding: 20px 0;
+    width: 100%;
+    position: relative; /* or use fixed if you want it always visible */
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.site-footer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* spacing between items */
+}
+
+.site-footer li a {
+    color: grey;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s;
+}
+
+.site-footer li a:hover {
+    color: #4aff33;
+}
+
+.site-footer img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}   
+
+/* history */
+
+.history{
+    position: relative;
+    bottom: 40px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.headline-history{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    margin: 2em;
+}
+
+.text-line{
+    background-color: #4aff33;
+    height: 50px;
+    width: 1px;
+}
+
+.main-title-history{
+    display: inline-block;
+}
+
+.history video{
+    margin: 2em;
+    height:300%;
+    width: 300%;
+    border-radius: 20px;
+}
+
+.history .subtitles-history{
+    margin: 2em;
+    text-align: justify;
+    line-height: 30px;
+    margin-right: 0px;
+}
+
+/* join us */
+
+div.join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+}
+
+/* mission visiom */
+.advocacy{
+    margin: 2em;
+    line-height: 30px;
+    min-height: 100px;
+}
+
+/* news */
+
+.headline-news{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    margin: 2em;
+    margin-left: 130px;
+    min-height: 100px;
+    margin-bottom: 170px;
+}
+
+.text-line{
+    background-color: #4aff33;
+    height: 50px;
+    width: 1px;
+}
+
+/* contact */
+.null1{
+    position: relative;
+    background-color: white;
+    background: white;
+    margin: 0px;
+    padding-top: 10px;
+    z-index: 1002;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -100px;
+    gap: 40px;
+    padding: 50px 20px;
+    background-color: white;
+    color: #12193d;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    overflow: visible;
+}
+
+.contact-form input,textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form form{
+    width: 100%;
+}
+
+div.contact-info{
+    flex: 0 0 30%;
+    margin: 1em;
+    text-decoration: none;
+}
+
+div.contact-form{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+div.name{
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 1em;
+}
+
+form.firstname, form.email{
+    margin-right: 5rem;
+    overflow: visible;
+}
+
+form.lastname{
+    overflow: visible;
+}
+
+div.contact-addresses{
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 1em;
+}
+
+div.headings1{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 1em;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+
+div.body1{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.body1 textarea{
+    resize: none;
+    height: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.text-line-lm{
+    background-color: green;
+    height: 50px;
+    width: 1px;
+}
+
+.headline-contact{
+    color: #12193d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    margin: 2em;
+}
+
+button.message{
+    margin: 1em;
+    padding: 8px;
+    width: 250px;
+    border: none;
+    background: #325fe6;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
