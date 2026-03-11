@@ -583,3 +583,12 @@ button.message:hover{
     background-color: #4637ce;
     cursor: pointer;   
 }
+
+.members{
+    background-color: #dce4f1;
+    padding: 20px;
+}
+
+.members img{
+    padding-top: 100px;
+}
