@@ -21,6 +21,8 @@
 
             </div>
            
+            <button class="menu-toggle">☰</button>
+
             <div class="border"></div>
     
             <ul class="nav-links">
@@ -82,6 +84,15 @@
     </footer>
 
 <script src="//code.tidio.co/lfj7agihff3fcaxnv1vaignhhodt1afe.js" async></script>
+
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+
+    toggle.onclick = () => {
+        nav.classList.toggle("active");
+    };
+</script>
 
 </body>
 </html>
