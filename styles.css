@@ -110,7 +110,7 @@
     .navbar ul{
         position:absolute;
         top:100px;
-        left:-44px;
+        left:-40px;
         width:100%;
         background:#325fe6;
         flex-direction:column;
@@ -652,5 +652,6 @@ button.message:hover{
         flex-direction: column-reverse;
     }
 }
+
 
 
