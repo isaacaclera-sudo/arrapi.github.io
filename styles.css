@@ -647,3 +647,9 @@ button.message:hover{
     padding-top: 100px;
 }
 
+@media(max-width:1096px){
+    section.contact{
+        flex-direction: column-reverse;
+    }
+}
+
